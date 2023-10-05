@@ -1,3 +1,50 @@
 <resources>
-    <string name="app_name">JetpackStudy</string>
+<string name="app_name">JetpackStudy</string>
+<string name="bottom_panel_correct">正确</string>
+<string name="bottom_panel_error">错误</string>
+<string name="bottom_panel_reset">重测</string>
+
+<string name="producetest_result">生产测试结果</string>
+<string name="is_producetest_result_ok">生产测试结果是否正常？</string>
+<string name="bar_code">序列号</string>
+<string name="meid">MEID</string>
+<string name="imei1">IMEI1:</string>
+<string name="imei2">IMEI2:</string>
+<string name="sim1">SIM1:</string>
+<string name="sim2">SIM2:</string>
+<string name="sim2_signal">SIM2信号强度：</string>
+<string name="sim2_connect">SIM2入网状态：</string>
+<string name="sim2_connect_tip">SIM2入网状态：正在检测中。。。</string>
+
+<string name="phone_soft_version">手机软件版本</string>
+<string name="produce_result">生产测试结果</string>
+<string name="storage_tip">内存信息</string>
+
+<string name="sdcard_text">SD卡</string>
+<string name="wifi_mac_text">WIFI MAC</string>
+<string name="bt_mac_text">BT MAC</string>
+<string name="googlekey_test_fail">AttestationKey测试失败</string>
+<string name="sim_nok">NOK</string>
+<string name="nok">NOK</string>
+<string name="sd_note_have">内部SD卡处于正常工作</string>
+<string name="sd_note_no">未找到SD卡</string>
+<string name="imei_err_msg">IMEI号错误</string>
+
+<string name="sw_version">软件版本号：</string>
+<string name="inner_sw_version">内部版本号：</string>
+<string name="serial_num">序列号：</string>
+<string name="barcode">barcode：</string>
+
+<string name="storage_text">运行内存和内部存储：</string>
+<string name="sdallsize">总容量：</string>
+<string name="sdfreesize">剩余容量：</string>
+
+<string name="device_test">设备信息</string>
+<string name="device_test_error">获取信息失败</string>
+<string name="sd_note_have_have_external">内部SD卡处于正常工作</string>
+<string name="sd2_note_have">外部SD卡处于正常工作</string>
+
+
+<string name="sd_note_not">未找到内部SD卡</string>
+<string name="sd2_note_not">未找到外部SD卡</string>
 </resources>

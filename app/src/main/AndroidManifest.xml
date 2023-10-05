@@ -21,6 +21,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".activity.ImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FragmentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".activity.EventBingActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

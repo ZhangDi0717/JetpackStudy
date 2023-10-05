@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="person"
+            type="com.zhangdi.jetpackstudy.bean.Person" />
+
+        <variable
+            name="presenter"
+            type="com.zhangdi.jetpackstudy.activity.EventBingActivity.Presenter" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.EventBingActivity">
+
+
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="无参"
+            android:layout_width="match_parent"
+            android:onClick="@{presenter.onClick}"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="有参"
+            android:layout_width="match_parent"
+            android:onClick="@{()->presenter.onClick(person)}"
+            android:layout_height="50dp"/>
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text='@{"name = "+person.name+ "; age = "+person.age}'/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@{person.name}"/>
+
+
+
+    </LinearLayout>
+</layout>

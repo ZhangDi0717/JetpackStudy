@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="action"
+            type="com.zhangdi.jetpackstudy.activity.FragmentActivity.ClickAction" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:background="@color/backColor"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_weight="1"
+            android:text="@string/bottom_panel_correct"
+            android:onClick="@{action.onclick}"
+            android:textSize="@dimen/sp_17" />
+
+        <Button
+            android:id="@+id/error"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:text="@string/bottom_panel_error"
+            android:onClick="@{action.onclick}"
+            android:textSize="@dimen/sp_17" />
+
+        <Button
+            android:id="@+id/retest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:onClick="@{action.onclick}"
+            android:text="@string/bottom_panel_reset"
+            android:textSize="@dimen/sp_17" />
+
+    </LinearLayout>
+</layout>

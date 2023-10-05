@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="device"
+            type="com.zhangdi.jetpackstudy.bean.DeviceBean" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/backColor"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_32"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@string/phone_soft_version" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:orientation="vertical"
+                    android:background="@drawable/rectangle_black_40">
+
+                    <TextView
+                        android:id="@+id/sw_version"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@{device.softVersionColor}"
+                        android:text="@{device.softVersion}"
+                        android:hint="@string/sw_version"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/serial_num"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.serial}"
+                        android:textColor="@{device.serialColor}"
+                        android:hint="@string/serial_num"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/barcode"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.barCode}"
+                        android:textColor="@{device.barCodeColor}"
+                        android:hint="@string/barcode"
+                        android:textColorHint="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_32"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/dp_16"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@color/white"
+                        android:text="@string/phone_soft_version" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:background="@drawable/rectangle_black_40">
+
+
+                    <TextView
+                        android:id="@+id/imei1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.imei1}"
+                        android:textColor="@{device.imei1Color}"
+                        android:hint="@string/imei1"
+                        android:textColorHint="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/imei1Code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/imei2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.imei2}"
+                        android:textColor="@{device.imei2Color}"
+                        android:hint="@string/imei2"
+                        android:textColorHint="@color/white"/>
+
+                    <ImageView
+                        android:id="@+id/imei2Code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/wifi_mac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.wifiMac}"
+                        android:textColor="@{device.wifiMacColor}"
+                        android:hint="@string/wifi_mac_text"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/bt_mac"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.btMac}"
+                        android:textColor="@{device.btMacColor}"
+                        android:hint="@string/bt_mac_text"
+                        android:textColorHint="@color/white"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/device_storage_title_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_32"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="#ffffff"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@string/storage_tip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/device_storage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dp_16"
+                    android:paddingRight="@dimen/dp_16"
+                    android:background="@drawable/rectangle_black_40">
+
+
+                    <TextView
+                        android:id="@+id/storage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:textColor="@{device.storageColor}"
+                        android:text="@{device.storage}"
+                        android:hint="@string/storage_text"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/note_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@{device.sd1StatusColor}"
+                        android:text="@{device.sd1Status}"
+                        android:textSize="@dimen/sp_15"/>
+
+                    <TextView
+                        android:id="@+id/allsize"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{device.sd1All}"
+                        android:textColor="@{device.sd1AllColor}"
+                        android:textSize="@dimen/sp_15"
+                        android:hint="@string/sdallsize"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/freesize"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{device.sd1Available}"
+                        android:textColor="@{device.sd1AvailableColor}"
+                        android:textSize="@dimen/sp_15"
+                        android:hint="@string/sdfreesize"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/note_title2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_15"
+                        android:text="@{device.sd2Status}"
+                        android:textColor="@{device.sd2StatusColor}" />
+
+                    <TextView
+                        android:id="@+id/allsize2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{device.sd2All}"
+                        android:textColor="@{device.sd2AllColor}"
+                        android:textSize="@dimen/sp_15"
+                        android:hint="@string/sdallsize"
+                        android:textColorHint="@color/white"/>
+
+                    <TextView
+                        android:id="@+id/freesize2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{device.sd2Available}"
+                        android:textColor="@{device.sd2AvailableColor}"
+                        android:textSize="@dimen/sp_15"
+                        android:hint="@string/sdfreesize"
+                        android:textColorHint="@color/white"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>
