@@ -1,4 +1,4 @@
-package com.zhangdi.jetpackstudy.activity;
+package com.zhangdi.jetpackstudy.factorytest;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -10,24 +10,34 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import com.zhangdi.jetpackstudy.R;
+import com.zhangdi.jetpackstudy.databinding.ActivityBottomPanelBinding;
 import com.zhangdi.jetpackstudy.databinding.ActivityFragmentBinding;
 import com.zhangdi.jetpackstudy.utils.ClickBase;
 
 
-public class FragmentActivity extends AppCompatActivity {
+public class FragmentActivity extends FactoryTestResult {
 
     private static final String TAG = "FragmentActivity";
 
 
     protected boolean isRetest = false;//是否重测
     private ActivityFragmentBinding binding;
+
+
+
     @SuppressLint("CommitTransaction")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_fragment);
-
+        setBinding(binding.bottomPanel);
         //binding.mainContainer.addView();
+    }
+
+    @Override
+    public ActivityBottomPanelBinding getBinding() {
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_fragment);
+        return binding.bottomPanel;
     }
 
 

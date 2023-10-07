@@ -47,4 +47,21 @@
 
 <string name="sd_note_not">未找到内部SD卡</string>
 <string name="sd2_note_not">未找到外部SD卡</string>
+
+
+    <string name="record_play_sound">录音</string>
+    <string name="is_record_play_sound_ok">录音是否正常？</string>
+    <string name="btn_start">开始</string>
+    <string name="btn_stop">停止</string>
+    <string name="btn_play">播放录音</string>
+    <string name="record_play_sound_prepare">准备开始</string>
+    <string name="btn_finish">完成录音</string>
+    <string name="MIC">MIC</string>
+    <string name="main_mic">主MIC</string>
+    <string name="sub_mic">副MIC</string>
+    <string name="is_MIC_ok">MIC测试结果是否正常？</string>
+    <string name="mic_warning">请对着麦克风讲话，漂亮的音符将随之上下舞动。否则请记录麦克风 出现故障！</string>
+    <string name="mic_record">开始</string>
+    <string name="mic_tip_main_mic">主MIC</string>
+    <string name="mic_tip_sub_mic">副MIC</string>
 </resources>

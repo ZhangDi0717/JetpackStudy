@@ -26,7 +26,7 @@
             android:name=".activity.ImageActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.FragmentActivity"
+            android:name=".factorytest.FragmentActivity"
             android:exported="false" />
 
         <activity

@@ -14,10 +14,9 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 
 import com.zhangdi.jetpackstudy.activity.EventBingActivity;
-import com.zhangdi.jetpackstudy.activity.FragmentActivity;
+import com.zhangdi.jetpackstudy.factorytest.FragmentActivity;
 import com.zhangdi.jetpackstudy.activity.ImageActivity;
 import com.zhangdi.jetpackstudy.adapter.ItemAdapter;
-import com.zhangdi.jetpackstudy.databinding.ActivityMainBinding;
 import com.zhangdi.jetpackstudy.divider.DividerGridItemDecoration;
 
 import java.util.ArrayList;
